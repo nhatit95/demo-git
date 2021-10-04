@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <h1 id="title">freeCodeCamp Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+            </div>
+            <div class="content">
+                <section>
+                    <form id="survey-form" action="">
+                        <label for="name" id="name-label" >Name
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </label>
+                        <label for="email" id="email-label">Email
+                            <input type="email" id="email" placeholder="Enter your Email" required>
+                        </label>
+                        <label for="number" id="number-label">Age (optional)
+                            <input type="number" min="10" max="99" id="number" placeholder="Age" required>
+                        </label>
+                        
+                        <label for="dropdown">Which option best describes your current role?</label>
+                        <select name="role" id="dropdown">
+                            <option disabled selected value="" >Select current role</option>
+                            <option value="Student" >Student</option>
+                            <option value="Full Time Job" >Full Time Job</option>
+                            <option value="Full Time Learner" >Full Time Learner</option>
+                            <option value="Prefer not to say" >Prefer not to say</option>
+                            <option value="Other" >Other</option>
+                        </select>
+    
+                        <label  >Would you recommend freeCodeCamp to a friend?</label>
+                        <label for="definitely">
+                            <input type="radio" id="definitely" name="friend-recommend" value="Definitely">Definitely
+                        </label>
+                        <label for="maybe">
+                            <input type="radio" id="maybe" name="friend-recommend" value="Maybe">Maybe
+                        </label>
+                        <label for="not-sure">
+                            <input type="radio" id="not-sure" name="friend-recommend" value="Not sure">Not sure
+                        </label>
+    
+                        <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+                        <select name="skill" id="dropdown">
+                            <option disabled selected value="" >Select current role</option>
+                            <option value="Challenges" >Challenges</option>
+                            <option value="Projects" >Projects</option>
+                            <option value="Community" >Community</option>
+                            <option value="Open Source" >Open Source</option>
+                        </select>
+    
+                        <label  >What would you like to see improved? (Check all that apply)</label>
+                        <label for="front-end">
+                            <input type="checkbox" id="front-end" name="skill-improvement" value="Front-end Projects" >Front-end Projects
+                        </label>
+                        <label for="fback-end">
+                            <input type="checkbox" id="back-end" name="skill-improvement" value="Back-end Projects" >Back-end Projects
+                        </label>
+                        <label for="data">
+                            <input type="checkbox" id="data" name="skill-improvement" value="Data Visualization" >Data Visualization
+                        </label>
+                        <label for="challenge">
+                            <input type="checkbox" id="challenge" name="skill-improvement" value="Challenges" >Challenges
+                        </label>
+                        <label for="open-source">
+                            <input type="checkbox" id="open-source" name="skill-improvement" value="Open Source Community" >Open Source Community
+                        </label>
+                        <label for="gitter">
+                            <input type="checkbox" id="gitter" name="skill-improvement" value="Gitter help rooms" >Gitter help rooms
+                        </label>
+                        <label for="video">
+                            <input type="checkbox" id="video" name="skill-improvement" value="Videos" >Videos
+                        </label>
+                        <label for="city">
+                            <input type="checkbox" id="city" name="skill-improvement" value="City Meetups" >City Meetups
+                        </label>
+                        <label for="wiki">
+                            <input type="checkbox" id="wiki" name="skill-improvement" value="Wiki" >Wiki
+                        </label>
+                        <label for="forum">
+                            <input type="checkbox" id="forum" name="skill-improvement" value="Forum" >Forum
+                        </label>
+                        <label for="additional">
+                            <input type="checkbox" id="additional" name="skill-improvement" value="Additional Courses" >Additional Courses
+                        </label>
+    
+                        <label for="textarea">Any comments or suggestions?</label>
+                        <textarea name="" id="textarea" rows="5" placeholder="Enter your comment here..."></textarea>
+    
+                        <label for="submit">
+                            <input type="submit" id="submit" value="Submit">
+                        </label>
+    
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
